@@ -6,10 +6,157 @@
     <title> "Portfolio"
     </title>
     <link rek="stylesheet" type="text/css" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+
+    <style>
+        .block {
+            background-color: black;
+            opacity: .7;
+            padding: 10px;
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 5px;
+        }
+
+        .nav-pills {
+            font-size: 1.7em;
+            background-color: black;
+            margin-bottom: 15%;
+        }
+
+        body {
+            font-family: Lobster;
+            background-color: white;
+            color: white;
+        }
+
+        h1 {
+            padding: 0;
+            margin-top: 0px;
+            font-size: 5.0em;
+        }
+
+        .pageOne {
+            background: url("https://hd.unsplash.com/photo-1470660513416-5494d0eab742");
+            background-size: cover;
+            height: 650px;
+        }
+
+        .pageTwo {
+            background: url("https://hd.unsplash.com/photo-1443866451220-8377d57c426a ");
+            background-size: cover;
+            height: 650px;
+            padding-top: 5%;
+        }
+
+        .pageThree {
+            background: url("https://hd.unsplash.com/photo-1464911946501-349cb57e0c36");
+            background-size: cover;
+            height: 650px;
+            padding-top: 5%;
+        }
+
+        .btn-default {
+            background-color: black;
+            border-color: black;
+            color: #337ab7;
+            font-size: 1.7em;
+        }
+
+        p {
+            font-size: 2.2em;
+        }
+
+        .me {
+            height: 450px;
+            float: left;
+            padding-right: 1em;
+        }
+
+        .Joey {
+            height: 300px;
+            padding-left: 2em;
+            padding-top: 1%;
+            img-responsive;
+        }
+
+        .black {
+            color: black;
+        }
+    </style>
+
 </head>
 
+
+
 <body>
-    <h1> Hello WOrld</h1>
+    <header>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    </header>
+
+    <div class="pageOne text-center">
+        <ul class="nav nav-pills">
+            <li>
+                <a href="#">Worldfat</a>
+            </li>
+            <li class="pull-right">
+                <a class="scrollTo" data-scrollTo="Portfolio" href="#Portfolio">Portfolio
+    </a>
+            </li>
+            <li class="pull-right">
+                <a class="scrollTo" data-scrollTo="Derek" href="#Derek">About Me
+    </li>
+    </a>
+                <li class="pull-right">
+                    <a href="#">Contact Me</a>
+                </li>
+        </ul>
+        <div class="block text-center jumbotron">
+            <h1>Derek J. Flagg</h1>
+            <h3>Humble Learner. Freshest Programmer.</h3>
+        </div>
+        <div class="btnList ">
+            <a class="btn btn-default" href="https://www.facebook.com/derek.sitthideth" target="_blank">Facebook</a>
+            <a class="btn btn-default" href="https://www.linkedin.com/in/derek-sitthideth-6853aa101?trk=nav_responsive_tab_profile" target="_blank">LinkedIn</a>
+            <a class="btn btn-default" href="https://github.com/dereksitthideth" target="_blank">GitHub</a>
+            <a class="btn btn-default" href="https://twitter.com/dereksitthideth" target="_blank">Twitter</a>
+            <a class="btn btn-default" href="https://www.instagram.com/dereksitthideth" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+
+    <div id="Derek" class="pageTwo">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h1>A little about me...</h1>
+                <p>The name is Derek and I am a deeply devoted family member, board member, and aspiring professional. I am a novice website designer who aspires to make this a career. Follow me on my path to building my portfolio and becoming a presence
+                    in the city of Tacoma, Washington. Send me a message below for any inquiries.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="http://res.cloudinary.com/nunuannie/image/upload/v1472863452/me_c77crh.jpg" class="me" />
+            </div>
+        </div>
+    </div>
+
+    <div id="Portfolio" class="pageThree">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h1>Portfolio</h1>
+            </div>
+        </div>
+        <div class="column">
+            <a href="https://codepen.io/dereksitthideth/full/bZxEzm/">
+                <img src="http://i.imgur.com/8Na3fxS.png" class="Joey">
+            </a>
+        </div>
+        <form class="pull-right black" action="https://formspree.io/dereksitthideth@gmail.com" method="POST">
+            <input type="text" placeholder="Your name" name="name">
+            <input type="email" placeholder="Your email" name="_replyto">
+            <input type="text" placeholder="Your message" name="message">
+            <input type="submit" value="Send">
+        </form>
+    </div>
 </body>
 
 </html>
